@@ -20,6 +20,27 @@ public class Paper implements Comparable<Paper>, java.util.Comparator<Paper> {
 	private String digitalObjectID; //The optional digital identifier for the paper.
 	
 	/**
+	 * A constructor for the Paper class.
+	 * 
+	 * @param authorNames Names of the authors of the paper.
+	 * @param title The title of the paper.
+	 * @param serialTitle Title of the serial in which the paper was published.
+	 * @param pageNumbers The pages where the paper appeared in the serial.
+	 * @param date The date the paper was published.
+	 * @param digitalObjectID The optional digital identifier for the paper.
+	 */
+	public Paper(String[] authorNames, String title, String serialTitle,
+				 String pageNumbers, Calendar date, String digitalObjectID) {
+		
+		this.authorNames = authorNames;
+		this.title = title;
+		this.serialTitle = serialTitle;
+		this.pageNumbers = pageNumbers;
+		this.date = date;
+		this.digitalObjectID = digitalObjectID;
+	}
+	
+	/**
 	 * Gets the names of the paper's authors.
 	 * @return The value of the authorNames field.
 	 */
