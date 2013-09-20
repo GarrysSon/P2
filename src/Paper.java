@@ -1,7 +1,5 @@
 import java.util.Calendar;
 
-//It'sa me, John.
-
 /**
  * Project #2
  * CS 2334, Section 010
