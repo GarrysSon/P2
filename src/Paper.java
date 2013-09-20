@@ -48,7 +48,7 @@ public class Paper implements Comparable<Paper>, java.util.Comparator<Paper> {
 	 */
 	public String[] getAuthorNames() {
 		
-		return null;
+		return authorNames;
 	}
 	
 	/**
@@ -57,7 +57,7 @@ public class Paper implements Comparable<Paper>, java.util.Comparator<Paper> {
 	 */	
 	public String getTitle() {
 		
-		return null;
+		return title;
 	}
 	/**
 	 * Gets the title of the serial in which the paper was published.
@@ -65,7 +65,7 @@ public class Paper implements Comparable<Paper>, java.util.Comparator<Paper> {
 	 */	
 	public String getSerialTitle() {
 		
-		return null;
+		return serialTitle;
 	}
 	/**
 	 * Gets the page numbers where the paper appeared in the serial.
@@ -73,13 +73,13 @@ public class Paper implements Comparable<Paper>, java.util.Comparator<Paper> {
 	 */	
 	public String getPageNumbers() {
 		
-		return null;
+		return pageNumbers;
 	}
 	/**
 	 * Gets the date the paper was published.
 	 * @return String representation of the value of the date field.
 	 */	
-	public String getCalendar() {
+	public String getDate() {
 		
 		return null;
 	}
@@ -89,7 +89,7 @@ public class Paper implements Comparable<Paper>, java.util.Comparator<Paper> {
 	 */	
 	public String getDigitalObjectID() {
 		
-		return null;
+		return digitalObjectID;
 	}
 	
 	/* (non-Javadoc)
