@@ -1,4 +1,3 @@
-import java.util.Calendar;
 
 /**
  * Project #2
@@ -18,26 +17,32 @@ public class JournalArticle extends Paper {
 	/**
 	 * A constructor for the JournalArticle class.
 	 * 
-	 * @param authorNames Names of the authors of the paper.
-	 * @param title The title of the paper.
-	 * @param serialTitle Title of the serial in which the paper was published.
-	 * @param pageNumbers The pages where the paper appeared in the serial.
-	 * @param date The date the paper was published.
-	 * @param digitalObjectID The optional digital identifier for the paper.
+	 * @param authorNames Names of the authors of the journal.
+	 * @param title The title of the journal.
+	 * @param serialTitle Title of the serial in which the journal was published.
+	 * @param volume The volume of the journal.
+	 * @param issue The issue of the journal.
+	 * @param pageNumbers The pages where the journal appeared in the serial.
+	 * @param date The date the journal was published.
+	 * @param digitalObjectID The optional digital identifier for the journal.
 	 */
-	public JournalArticle(String[] authorNames, String title, String serialTitle,
-				 String pageNumbers, Calendar date, String digitalObjectID) {
-		
+	public JournalArticle(String[] authorNames, String title,
+			String serialTitle, int volume, int issue,
+			String pageNumbers, String date,
+			String digitalObjectID)
+	{
 		super(authorNames, title, serialTitle, pageNumbers, date, digitalObjectID);
+		this.volume = volume;
+		this.issue = issue;
 	}
-	
+
 	/**
 	 * Gets the volume of the journal in which the article appears.
 	 * @return The value of the volume field.
 	 */
 	public int getVolume() {
 		
-		return 0;
+		return volume;
 	}
 	
 	/**
@@ -46,7 +51,7 @@ public class JournalArticle extends Paper {
 	 */
 	public int getIssue() {
 		
-		return 0;
+		return issue;
 	}
 	
 	/* (non-Javadoc)

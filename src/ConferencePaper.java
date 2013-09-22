@@ -1,4 +1,3 @@
-import java.util.Calendar;
 
 /**
  * Project #2
@@ -23,7 +22,7 @@ public class ConferencePaper extends Paper {
 	 * @param digitalObjectID The optional digital identifier for the paper.
 	 */
 	public ConferencePaper(String[] authorNames, String title, String serialTitle,
-				 String pageNumbers, Calendar date, String digitalObjectID) {
+				 String pageNumbers, String date, String digitalObjectID) {
 		
 		super(authorNames, title, serialTitle, pageNumbers, date, digitalObjectID);
 	}

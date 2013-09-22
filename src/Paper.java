@@ -1,4 +1,3 @@
-import java.util.Calendar;
 
 /**
  * Project #2
@@ -16,7 +15,7 @@ public class Paper implements Comparable<Paper>, java.util.Comparator<Paper> {
 	private String title; //Title of the paper
 	private String serialTitle; //Title of the serial in which the paper was published.
 	private String pageNumbers; //The pages where the paper appeared in the serial.
-	private Calendar date; //The date the paper was published.
+	private String date; //The date the paper was published.
 	private String digitalObjectID; //The optional digital identifier for the paper.
 	
 	/**
@@ -30,7 +29,7 @@ public class Paper implements Comparable<Paper>, java.util.Comparator<Paper> {
 	 * @param digitalObjectID The optional digital identifier for the paper.
 	 */
 	public Paper(String[] authorNames, String title, String serialTitle,
-				 String pageNumbers, Calendar date, String digitalObjectID) {
+				 String pageNumbers, String date, String digitalObjectID) {
 		
 		this.authorNames = authorNames;
 		this.title = title;
@@ -97,6 +96,7 @@ public class Paper implements Comparable<Paper>, java.util.Comparator<Paper> {
 		
 		return 0;
 	}
+	
 	/* (non-Javadoc)
 	 * @see java.util.Comparator#compare(java.lang.Object, java.lang.Object)
 	 */
